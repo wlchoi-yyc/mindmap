@@ -2,74 +2,87 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>《六國論》主題內容圖</title>
+  <title>《六國論》視覺組織圖</title>
   <style>
     body {
-      background: #fdfaf4;
-      font-family: "cwTeXYen", "Noto Sans TC", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-    }
-
-    .mindmap {
-      position: relative;
-      width: 800px;
+      font-family: "標楷體", sans-serif;
+      background-color: #fefefe;
       padding: 20px;
     }
-
-    .center {
-      background-color: #fff;
-      border: 2px solid #000;
-      border-radius: 15px;
-      padding: 15px 30px;
-      display: inline-block;
-      font-size: 22px;
-      font-weight: bold;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
+    h1 {
+      text-align: center;
+      color: #444;
     }
-
-    .branch {
-      position: absolute;
-      width: 300px;
-      background-color: #fff;
-      border: 2px solid #000;
-      border-radius: 20px;
+    .section {
+      margin: 20px 0;
       padding: 15px;
-      font-size: 16px;
-      line-height: 1.6;
+      border-radius: 10px;
     }
-
-    .line {
-      position: absolute;
-      width: 2px;
-      background-color: black;
-      z-index: 1;
+    .main-theme {
+      background-color: #fffacc;
+      border-left: 8px solid #e6c200;
     }
-
-    /* 分支定位 */
-    .branch1 { top: 0; left: 20px; }
-    .branch2 { top: 0; right: 20px; }
-    .branch3 { bottom: 0; left: 20px; }
-    .branch4 { bottom: 0; right: 20px; }
-
+    .blue { background-color: #e6f2ff; border-left: 8px solid #3399ff; }
+    .green { background-color: #eaffea; border-left: 8px solid #33cc33; }
+    .orange { background-color: #fff4e6; border-left: 8px solid #ff9900; }
+    .red { background-color: #ffe6e6; border-left: 8px solid #ff3333; }
+    ul { margin-top: 10px; }
+    .notes {
+      margin-top: 30px;
+      padding: 15px;
+      border: 1px dashed #aaa;
+      background-color: #fafafa;
+    }
   </style>
 </head>
 <body>
+  <h1>《六國論》視覺組織圖</h1>
 
-<div class="mindmap">
-  <div class="center">六國論的主題內容</div>
+  <div class="section main-theme">
+    <strong>主旨：</strong>六國破滅，非兵不利，戰不善，弊在賂秦。
+  </div>
 
-  <div class="branch branch1">指出六國破亡主因在於賂秦，並非兵不利、戰不善</div>
-  <div class="branch branch2">論證賂秦損失遠勝戰敗，秦貪無厭，諸侯自招滅亡</div>
-  <div class="branch branch3">說明不賂者因失援而亡，強調合縱抗秦的重要性</div>
-  <div class="branch branch4">借古諷今，勸戒北宋切勿向外族求和</div>
-</div>
+  <div class="section blue">
+    <strong>一、六國滅亡原因</strong>
+    <ul>
+      <li>表層觀點（反駁）：非因軍隊不強，作戰不力</li>
+      <li>真正原因（提出）：賂秦 → 自削實力，助長其欲</li>
+      <li>良言：賂敵割地，攻藩謝罪，喪權辱國</li>
+    </ul>
+  </div>
 
+  <div class="section green">
+    <strong>二、六國行賂之過失</strong>
+    <ul>
+      <li>賂秦得寸進尺，割地削弱國力</li>
+      <li>自己愈損，秦愈益，表面和平，實則大患</li>
+    </ul>
+  </div>
+
+  <div class="section orange">
+    <strong>三、齊何獨國未賂亦亡</strong>
+    <ul>
+      <li>齊不賂秦，但不與六國合縱抗秦</li>
+      <li>孤立自保，最終仍敗 → 引出合力抗敵之重要</li>
+    </ul>
+  </div>
+
+  <div class="section red">
+    <strong>四、今之教訓與警示（臣賂君）</strong>
+    <ul>
+      <li>由賂秦轉向賂君：巨子賂諸侯，猶如六國賂秦</li>
+      <li>受賂者益，施賂者損 → 國內外皆同理</li>
+    </ul>
+  </div>
+
+  <div class="notes">
+    <h3>📚 學習欄位填寫：</h3>
+    <ul>
+      <li><strong>語言特色：</strong>排比、層遞、對比、引用史例說理</li>
+      <li><strong>寫作手法：</strong>以古諷今，借史明理，議論嚴密</li>
+      <li><strong>寫作目的：</strong>警示君主群臣，以史為鑑</li>
+      <li><strong>學習重點（學生填）：</strong>_________________________________________</li>
+    </ul>
+  </div>
 </body>
 </html>
