@@ -1,96 +1,98 @@
-<!DOCTYPE html><html lang="zh-Hant">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>《六國論》魚骨圖</title>
+  <title>《六國論》視覺組織圖</title>
   <style>
     body {
-      font-family: "標楷體", sans-serif;
-      background-color: #fdfdfd;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f9f9f9;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .main-title {
+      background-color: #cce5ff;
+      color: #004085;
       padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #444;
-    }
-    .fishbone {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 40px;
-    }
-    .bone {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 10px 0;
-      width: 100%;
-    }
-    .label {
-      width: 40%;
-      padding: 10px;
-      background-color: #f0f8ff;
-      border: 1px solid #ccc;
-      text-align: right;
+      border-radius: 15px;
+      font-size: 22px;
       font-weight: bold;
+      width: 90%;
+      margin: 0 auto 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     }
-    .line {
-      flex-grow: 1;
-      height: 2px;
-      background-color: #333;
-      margin: 0 10px;
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
     }
-    .point {
-      width: 40%;
-      padding: 10px;
-      background-color: #fffbe6;
-      border: 1px solid #ccc;
+
+    .card {
+      background-color: #fff3cd;
+      border: 2px solid #ffeeba;
+      border-radius: 12px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+      text-align: left;
     }
-    .center-box {
-      margin-top: 30px;
-      padding: 15px;
-      background-color: #fffacc;
-      border: 2px solid #e6c200;
-      font-size: 1.2em;
-      text-align: center;
-      font-weight: bold;
-      max-width: 600px;
+
+    .card h3 {
+      font-size: 18px;
+      color: #856404;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #5a4c21;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>《六國論》魚骨圖</h1>  <div class="fishbone">
-    <div class="bone">
-      <div class="label">表層原因（反駁）</div>
-      <div class="line"></div>
-      <div class="point">非兵不利，戰不善</div>
-    </div><div class="bone">
-  <div class="label">實質原因（提出）</div>
-  <div class="line"></div>
-  <div class="point">賂秦 → 割地喪權，自削國力</div>
-</div>
 
-<div class="bone">
-  <div class="label">賂秦之害</div>
-  <div class="line"></div>
-  <div class="point">助長秦之野心，秦益而六國損</div>
-</div>
+  <div class="main-title">
+    主旨：借六國賂秦而亡的歷史教訓，諷喻北宋執政者不要向外族（契丹和西夏）求和，以免重蹈六國滅亡的覆轍。
+  </div>
 
-<div class="bone">
-  <div class="label">齊不賂亦亡</div>
-  <div class="line"></div>
-  <div class="point">不合縱抗秦 → 孤立失敗</div>
-</div>
+  <div class="card-container">
 
-<div class="bone">
-  <div class="label">今之教訓</div>
-  <div class="line"></div>
-  <div class="point">賄君如賂秦，施賂者損，受賂者益</div>
-</div>
+    <div class="card">
+      <h3>第1段</h3>
+      <p>開門見山，下筆立論，指出六國破滅的主因是弊在賂秦。</p>
+    </div>
 
-<div class="center-box">
-  六國破滅，弊在賂秦。
-</div>
+    <div class="card">
+      <h3>第2段</h3>
+      <p>論證「弊在賂秦」的論點，指出諸侯賂秦所失的土地遠較戰敗而失的土地多百倍，而秦國貪得無厭，諸侯割地賂秦只會自招滅亡。</p>
+    </div>
+
+    <div class="card">
+      <h3>第3段</h3>
+      <p>論證「不賂者以賂者喪」的論點，齊燕趙三國不賂秦仍遭滅亡，因失去強大的援助，不能單獨保全。</p>
+    </div>
+
+    <div class="card">
+      <h3>第4段</h3>
+      <p>設使六國團結抗秦，以賂秦的土地和心意封賞禮待天下謀臣奇才，則有勝秦的可能。</p>
+    </div>
+
+    <div class="card">
+      <h3>第5段</h3>
+      <p>借古諷今，指出北宋擁有統一的領土，軍隊陣容龐大，當政者不應向外族屈辱求和，以免重蹈六國之覆轍。</p>
+    </div>
 
   </div>
+
 </body>
 </html>
